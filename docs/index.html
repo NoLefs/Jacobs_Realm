@@ -35,12 +35,6 @@
 		// -->
 	</script>
 <body>
-	<div class="navigation">
-		<ul>
-			<li><a id="playButton" class="active tooltip" href="#gameplay"><span class="tooltiptext right">Play</span><img src="images/playButton.png" /></a></li>
-			<li><a id="downloadButton" class="tooltip" href="#download"><span class="tooltiptext right">Download</span><img src="images/downloadButton.png" /></a></li>
-		</ul>
-	</div>	
 	<div class="media">
 		<a href="https://discord.gg/JpeqvNs" target="_blank"><img class="social" src="https://decagames.com/assets/email/discord.png" alt="Discord" /></a>
 	</div>
@@ -84,7 +78,6 @@
 			// embed the Flash Content SWF when all tests are passed
 			AC_FL_RunContent(
 					"src", "AGCLoader1586977924",
-					"FlashVars", rotmg.UrlLib.getProtocolString()+'&version_timestamp=1586977924',
 					"width", "800",
 					"height", "600",
 					"align", "middle",
@@ -146,20 +139,6 @@
 			document.write(d.getFullYear())
 			</script> Jacobs Inc.</h4>
 	</div>
-</center>
-<script language="JavaScript" type="text/javascript">
-	$("#playButton").click(function(){
-		$("#playButton").addClass("active");
-		$("#downloadButton").removeClass("active");
-		$("#gameplay").addClass("show");
-		$("#download").removeClass("show");
-	});
-	$("#downloadButton").click(function(){
-		$("#playButton").removeClass("active");
-		$("#downloadButton").addClass("active");
-		$("#download").addClass("show");
-		$("#gameplay").removeClass("show");
-	});
 </script>
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"68b5cf49a073a4a35b479388f","lid":"9d2d35c08b","uniqueMethods":true}) })</script>
