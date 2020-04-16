@@ -1,0 +1,412 @@
+html {
+    display: table;
+    margin: auto;
+}
+
+body { 
+    display: table-cell;
+    vertical-align: middle;
+    width: 864px !important;
+    margin: 0px; 
+    padding: 0; 
+    background: #111 url(
+        ../images/backgroundPattern.png
+    ) repeat;
+    font-size:14px; 
+    font-weight: normal; 
+    color:#fff; 
+    font-family: 'myriad-pro', sans-serif; 
+    line-height: 18px;
+    overflow: hidden;
+}
+
+:link { color: #ffbe54; }
+:hover { color: #fff; }
+
+p {
+    margin: 5px;
+}
+
+h2 {
+    margin: 15px;
+}
+
+h3 {
+    margin: 5px;
+}
+
+a {
+    color: #ffbe54;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.KBPAY_IframeDialogCurtain {
+    position: absolute;
+    width: 2000px;
+    top:0;
+    left:0;
+    background-color:#000;
+    -moz-opacity:0.3;
+    opacity:.30;
+    filter:alpha(opacity=30);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+.KBPAY_IframeDialog {
+    position: absolute;
+}
+
+.media {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    margin: 8px 12px 2px 0;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out; /* Firefox 4 */
+    -webkit-transition: opacity .4s ease-in-out; /* Safari and Chrome */
+    -ms-transition: opacity .4s ease-in-out; /* IE 9 */
+}
+
+.navigation {
+    position: absolute;
+    width: 32px;
+    margin: 0 0 2px 0;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out; /* Firefox 4 */
+    -webkit-transition: opacity .4s ease-in-out; /* Safari and Chrome */
+    -ms-transition: opacity .4s ease-in-out; /* IE 9 */
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    background-color: #242424;
+    width: 32px;
+    height: 32px;
+    float: left;
+
+}
+
+.navigation ul li a {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8c8c8c;
+    text-align: center;
+    padding: 4.5px;
+    text-decoration: none;
+    transition: all .25s ease-in;
+    -moz-transition: all .25s ease-in; /* Firefox 4 */
+    -webkit-transition: all .25s ease-in; /* Safari and Chrome */
+    -ms-transition: all .25s ease-in; /* IE 9 */
+}
+
+.navigation ul li a:hover {
+    color: #fff;
+    text-shadow: #000 0px 0px 8px;
+    background-color: #4a4a4a;
+}
+
+.weblinks {
+    position: absolute;
+    width: 32px;
+    margin: 0 0 2px 832px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out; /* Firefox 4 */
+    -webkit-transition: opacity .4s ease-in-out; /* Safari and Chrome */
+    -ms-transition: opacity .4s ease-in-out; /* IE 9 */
+}
+
+.weblinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.weblinks ul li {
+    background-color: #242424;
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+
+.weblinks img {
+    position: relative;
+    z-index: 10;
+}
+
+.weblinks ul li a {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8c8c8c;
+    text-align: center;
+    padding: 4.5px;
+    text-decoration: none;
+    transition: all .25s ease-in;
+    -moz-transition: all .25s ease-in; /* Firefox 4 */
+    -webkit-transition: all .25s ease-in; /* Safari and Chrome */
+    -ms-transition: all .25s ease-in; /* IE 9 */
+}
+
+.weblinks ul li a:hover {
+    color: #fff;
+    text-shadow: #000 0px 0px 8px;
+    background-color: #4a4a4a;
+}
+
+.active {
+    color: #fff !important;
+    text-shadow: #000 0px 0px 8px !important;
+    background-color: #4a4a4a !important;
+}
+
+.logo {
+position: relative;
+top: 0;
+left: 0;
+display: inline-block;
+text-indent: -9999px;
+width: 180px;
+height: 71px;
+background: transparent url(../images/Logo_Deca.png) no-repeat 0 0;
+transform: scale(1);
+transition: transform .2s ease-in-out;
+-moz-transition: transform .2s ease-in-out; /* Firefox 4 */
+-webkit-transition: transform .2s ease-in-out; /* Safari and Chrome */
+-ms-transition: transform .2s ease-in-out; /* IE 9 */
+}
+
+.logo:hover {
+transform: scale(0.98);
+background: transparent url(../images/Logo_Deca.png) no-repeat 0 -142px;
+}
+
+.logo:after {
+content: "";
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+background: transparent url(../images/Logo_Deca.png) no-repeat;
+background-position:  0 -142px;
+opacity: 0;
+transition: opacity .2s ease-in-out;
+-moz-transition: opacity .2s ease-in-out; /* Firefox 4 */
+-webkit-transition: opacity .2s ease-in-out; /* Safari and Chrome */
+-ms-transition: opacity .2s ease-in-out; /* IE 9 */
+}
+
+.logo:hover:after {
+opacity: 1;
+}
+
+.point {
+	margin: 10px 20px 30px 20px;
+}
+
+.center {
+	text-align: center;
+}
+
+button {
+    cursor: pointer;
+    font-size: 16px !important;
+    text-transform: uppercase;
+	color: #fff;
+	width: 300px;
+	height: 50px;
+	padding-top: 3px;
+	margin: 10px 10px 0 10px;
+	background-color: rgba(118,147,0,255);
+	border: none;
+	transition: all 0.15s ease-in;
+	-moz-transition: all 0.15s ease-in; /* Firefox 4 */
+	-ms-transition: all 0.15s ease-in; /* IE 9 */
+	-webkit-transition: all 0.15s ease-in; /* Chrome, Safari, Opera */
+}
+
+button:hover {
+	color: #333;
+	background-color: rgba(255,255,255,255);
+	-moz-transform: scale(0.98); /* Firefox 4 */
+	-ms-transform: scale(0.98); /* IE 9 */
+    -webkit-transform: scale(0.98); /* Chrome, Safari, Opera */
+    transform: scale(0.98);
+}
+
+.button {
+text-transform: uppercase; 
+background: #e23b20; 
+color:#fff; 
+padding: 10px 20px;
+font-size: 14px;
+transform: scale(1);
+transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out; /* Firefox 4 */
+-webkit-transition: all .2s ease-in-out; /* Safari and Chrome */
+-ms-transition: all .2s ease-in-out; /* IE 9 */
+}
+
+.button:hover {
+    background: #fff; 
+color:#333; 
+transform: scale(0.9) !important;
+}
+
+
+.social {
+padding: 3px;
+transform: scale(1);
+transition: transform .2s ease-in-out;
+-moz-transition: transform .2s ease-in-out; /* Firefox 4 */
+-webkit-transition: transform .2s ease-in-out; /* Safari and Chrome */
+-ms-transition: transform .2s ease-in-out; /* IE 9 */
+}
+
+.social:hover {
+transform: scale(0.9) !important;
+}
+
+.footer {
+margin-top: 15px;
+}
+
+.getFlash {
+display: table-cell;
+width: 800px;
+height: 600px;
+background: #000 url(
+        ../images/getFlashBackground.png
+    ) repeat;
+vertical-align: middle;
+}
+.getClient {
+display: table-cell;
+width: 800px;
+height: 600px;
+background: #000;
+vertical-align: middle;
+}
+.content {
+height: 80px;
+margin: 60px;
+vertical-align: middle;
+}
+
+#gameplay {
+    display: none;
+}
+
+#download {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    color: #222;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px 10px;
+    box-shadow: #000 4px 4px -4px;	
+    text-shadow: none;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out; /* Firefox 4 */
+    -webkit-transition: all .2s ease-in-out; /* Safari and Chrome */
+    -ms-transition: all .2s ease-in-out; /* IE 9 */
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+}
+
+.tooltip .right {
+    right: 140%; 
+}
+
+.tooltip .left {
+    left: 140%; 
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+.tooltip:hover .right {
+    right: 110%; 
+}
+
+.tooltip:hover .left {
+    left: 110%; 
+}
+
+.blink {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    z-index: 5;
+    background-color: #fff;
+    -webkit-animation: flash ease-in-out 5s infinite;
+    animation: flash ease-in-out 5s infinite;
+  }
+
+@-webkit-keyframes flash {
+    0% { opacity: 0; } 
+    11% { opacity: 0.66; } 
+    33% { opacity: 0; } 
+    100% { opacity: 0; }
+}
+@keyframes flash {
+    0% { opacity: 0; } 
+    11% { opacity: 0.66; } 
+    33% { opacity: 0; } 
+    100% { opacity: 0; }
+}
+
+@media only screen and (min-width:0px) and (max-width: 864px) {
+    * { 
+    margin: 0; 
+    border: 0; 
+    padding: 0; 
+    }
+
+    body { 
+    -webkit-text-size-adjust: none; 
+    }
+
+    .media {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navigation {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .weblinks {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
